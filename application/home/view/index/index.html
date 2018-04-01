@@ -1,0 +1,79 @@
+{include file="common/header" /}
+	<!--滚动图-->
+	<div id="main">
+		<div class="home-device">
+			<a class="arrow-left" href="#"></a> 
+			<a class="arrow-right" href="#"></a>
+			<div class="swiper-main">
+				<div class="swiper-container swiper1">
+					<div class="swiper-wrapper">
+					    <div class="swiper-slide"><img src="__STATIC__/images/product/14110601.jpg" width="100%"></div>
+						<div class="swiper-slide"><img src="__STATIC__/images/product/14110601.jpg" width="100%"></div>
+						<div class="swiper-slide"><img src="__STATIC__/images/product/14110601.jpg" width="100%"></div>
+					</div>
+				</div>
+			</div>			
+		</div>
+		<div class="dian"><div class="pagination pagination1"></div></div>
+	</div>	
+	<!--资讯列表-->
+	<div class="news">
+		<!--滚动公告-->
+		<div class="gongao">
+			<div class="laba"><img src="__STATIC__/images/gongao.gif" /></div>
+			<div class="wenzi" id="mrq">
+				<div id="Marquee_x">
+					<ul>
+						<li>
+							<div>蓝软社区每天都会推出IT教学资源，日用软件，美剧，电影，学习资源等各种优质资源，免去你寻找资源的烦恼。</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="clearBoth"></div>
+		</div>
+		<!--资讯列表-->
+		<div class="newslist">
+			{volist name="result" id="re"}
+			<div class="qtao">
+				<div class="mg">
+					<div class="mgl"><a href="__ROOT__/public/{$re.image}"><img src="__ROOT__/public/{$re.image}" width="100%"/></a></div>
+					<div class="mgr">
+						<h3 style="font-size:100%;margin:5% 0 2% 2%;">{$re.title}</h3>
+						<div class="what">
+							<div class="time">
+								<div class="tub"><img src="__STATIC__/images/time.gif" /></div>
+								<div class="shij">{$re.createtime|date="Y年m月d日",###}</div>
+								<div class="clearBoth"></div>
+							</div>
+							<div class="time hit">
+								<div class="tub"><img src="__STATIC__/images/hit.gif" /></div>
+								<div class="shij">{$re.views}</div>
+								<div class="clearBoth"></div>
+							</div>
+							<div class="clearBoth"></div>
+						</div>
+						<!-- <div class="jianj">	
+						{$re.content}
+						</div> -->
+						<div class="ydu">
+							<div class="anniu" style="margin-right:18%;"><a href="{:url('detail',['re_id'=>$re.id])}"><img src="__STATIC__/images/ydu.gif" /></a></div>
+							<div class="clearBoth"></div>
+						</div>
+					</div>
+					<div class="clearBoth"></div>
+				</div>
+			</div>
+			{/volist}
+		</div>
+	</div>
+	<!--底部-->
+	{include file="common/footer" /}
+</div>
+<script type="text/javascript">
+  $('#Marquee_x').jcMarquee({ 'marquee':'x','margin_right':'300px','speed':20 });
+</script>
+<div style="text-align:center;">
+<!-- -->
+</body>
+</html>

@@ -1,0 +1,119 @@
+[ 2018-03-31T16:49:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000183s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T16:49:11+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T16:49:11+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002133s ]
+[ 2018-03-31T16:50:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T16:50:30+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T16:50:30+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002331s ]
+[ 2018-03-31T16:50:30+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T16:50:30+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T16:50:30+08:00 ][ sql ] [ SQL ] SELECT 1 [ RunTime:0.000558s ]
+[ 2018-03-31T17:59:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000130s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T17:59:08+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T17:59:08+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001511s ]
+[ 2018-03-31T17:59:08+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T17:59:08+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.002136s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T17:59:08+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'resourse' [ RunTime:0.000847s ]
+[ 2018-03-31T17:59:08+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'resourse' ORDER BY ORDINAL_POSITION [ RunTime:0.001006s ]
+[ 2018-03-31T18:00:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:00:12+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:00:12+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002531s ]
+[ 2018-03-31T18:00:12+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:00:12+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000731s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:00:12+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'resourse' [ RunTime:0.000825s ]
+[ 2018-03-31T18:01:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000037s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:01:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:01:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001090s ]
+[ 2018-03-31T18:01:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:01:05+08:00 ][ info ] [ LANG ] /Users/cristi/Sites/fastadmin/application/admin/lang/zh-cn.php
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000733s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.000850s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'resourse' LIMIT 1 [ RunTime:0.000627s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'resourse' , 'Resourse' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1522490465 , 1522490465) [ RunTime:0.000790s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/index' LIMIT 1 [ RunTime:0.000446s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/add' LIMIT 1 [ RunTime:0.000442s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/edit' LIMIT 1 [ RunTime:0.000341s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/del' LIMIT 1 [ RunTime:0.000340s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/multi' LIMIT 1 [ RunTime:0.000575s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'resourse/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1522490465 , 1522490465) [ RunTime:0.000677s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'resourse/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1522490465 , 1522490465) [ RunTime:0.000416s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'resourse/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1522490465 , 1522490465) [ RunTime:0.000240s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'resourse/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1522490465 , 1522490465) [ RunTime:0.000175s ]
+[ 2018-03-31T18:01:05+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 122 , 'resourse/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1522490465 , 1522490465) [ RunTime:0.000186s ]
+[ 2018-03-31T18:05:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000039s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:05:05+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:05:05+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001642s ]
+[ 2018-03-31T18:05:05+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:05:05+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:05:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'resourse' [ RunTime:0.000762s ]
+[ 2018-03-31T18:05:05+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'category' [ RunTime:0.000676s ]
+[ 2018-03-31T18:05:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000041s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:05:23+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:05:23+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002435s ]
+[ 2018-03-31T18:05:23+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:05:23+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000955s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:05:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'resourse' [ RunTime:0.001579s ]
+[ 2018-03-31T18:05:23+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'category' [ RunTime:0.000849s ]
+[ 2018-03-31T18:05:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000040s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:05:36+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:05:36+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.001066s ]
+[ 2018-03-31T18:05:36+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:05:36+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000554s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:05:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'resourse' [ RunTime:0.000693s ]
+[ 2018-03-31T18:05:36+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'category' [ RunTime:0.000675s ]
+[ 2018-03-31T18:05:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'resourse' ORDER BY ORDINAL_POSITION [ RunTime:0.000908s ]
+[ 2018-03-31T18:05:36+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'category' ORDER BY ORDINAL_POSITION [ RunTime:0.000763s ]
+[ 2018-03-31T18:06:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000036s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:06:16+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:06:16+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002867s ]
+[ 2018-03-31T18:06:16+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:06:16+08:00 ][ info ] [ LANG ] /Users/cristi/Sites/fastadmin/application/admin/lang/zh-cn.php
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001457s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.000846s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'resourse' LIMIT 1 [ RunTime:0.000618s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`pid` , `name` , `title` , `icon` , `remark` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (0 , 'resourse' , 'Resourse' , 'fa fa-circle-o' , '' , 1 , 'normal' , 1522490776 , 1522490776) [ RunTime:0.000847s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/index' LIMIT 1 [ RunTime:0.000578s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/add' LIMIT 1 [ RunTime:0.000539s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/edit' LIMIT 1 [ RunTime:0.000625s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/del' LIMIT 1 [ RunTime:0.000481s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/multi' LIMIT 1 [ RunTime:0.000375s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'resourse/index' , 'fa fa-circle-o' , '查看' , 0 , 'normal' , 1522490776 , 1522490776) [ RunTime:0.000390s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'resourse/add' , 'fa fa-circle-o' , '添加' , 0 , 'normal' , 1522490776 , 1522490776) [ RunTime:0.000276s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'resourse/edit' , 'fa fa-circle-o' , '编辑' , 0 , 'normal' , 1522490776 , 1522490776) [ RunTime:0.000268s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'resourse/del' , 'fa fa-circle-o' , '删除' , 0 , 'normal' , 1522490776 , 1522490776) [ RunTime:0.000212s ]
+[ 2018-03-31T18:06:16+08:00 ][ sql ] [ SQL ] INSERT INTO `auth_rule` (`id` , `pid` , `name` , `icon` , `title` , `ismenu` , `status` , `createtime` , `updatetime`) VALUES (NULL , 128 , 'resourse/multi' , 'fa fa-circle-o' , '批量更新' , 0 , 'normal' , 1522490776 , 1522490776) [ RunTime:0.000230s ]
+[ 2018-03-31T18:10:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000473s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:10:17+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:10:17+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002431s ]
+[ 2018-03-31T18:10:17+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:10:17+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.001958s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:10:17+08:00 ][ sql ] [ SQL ] SHOW TABLE STATUS LIKE 'resourse' [ RunTime:0.001128s ]
+[ 2018-03-31T18:10:17+08:00 ][ sql ] [ SQL ] SELECT * FROM `information_schema`.`columns` WHERE TABLE_SCHEMA = 'fastadmin' AND table_name = 'resourse' ORDER BY ORDINAL_POSITION [ RunTime:0.001177s ]
+[ 2018-03-31T18:10:27+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.000051s ]
+[ info ] [ LOG ] INIT File
+[ 2018-03-31T18:10:27+08:00 ][ info ] [ CACHE ] INIT File
+[ 2018-03-31T18:10:27+08:00 ][ info ] [ BEHAVIOR ] Run Closure @app_init [ RunTime:0.002808s ]
+[ 2018-03-31T18:10:27+08:00 ][ info ] [ DB ] INIT mysql
+[ 2018-03-31T18:10:27+08:00 ][ info ] [ LANG ] /Users/cristi/Sites/fastadmin/application/admin/lang/zh-cn.php
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:host=127.0.0.1;dbname=fastadmin;charset=utf8
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SHOW COLUMNS FROM `auth_rule` [ RunTime:0.000907s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SELECT * FROM `auth_rule` WHERE  `name` = 'resourse' LIMIT 1 [ RunTime:0.000615s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/index' LIMIT 1 [ RunTime:0.000536s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/add' LIMIT 1 [ RunTime:0.000400s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/edit' LIMIT 1 [ RunTime:0.000271s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/del' LIMIT 1 [ RunTime:0.000369s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] SELECT `id` FROM `auth_rule` WHERE  `name` = 'resourse/multi' LIMIT 1 [ RunTime:0.000447s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=128,`name`='resourse/index',`icon`='fa fa-circle-o',`title`='查看',`ismenu`=0,`status`='normal',`updatetime`=1522491027  WHERE  `id` = 129 [ RunTime:0.000560s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=128,`name`='resourse/add',`icon`='fa fa-circle-o',`title`='添加',`ismenu`=0,`status`='normal',`updatetime`=1522491027  WHERE  `id` = 130 [ RunTime:0.000206s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=128,`name`='resourse/edit',`icon`='fa fa-circle-o',`title`='编辑',`ismenu`=0,`status`='normal',`updatetime`=1522491027  WHERE  `id` = 131 [ RunTime:0.000170s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=128,`name`='resourse/del',`icon`='fa fa-circle-o',`title`='删除',`ismenu`=0,`status`='normal',`updatetime`=1522491027  WHERE  `id` = 132 [ RunTime:0.000154s ]
+[ 2018-03-31T18:10:27+08:00 ][ sql ] [ SQL ] UPDATE `auth_rule`  SET `pid`=128,`name`='resourse/multi',`icon`='fa fa-circle-o',`title`='批量更新',`ismenu`=0,`status`='normal',`updatetime`=1522491027  WHERE  `id` = 133 [ RunTime:0.000238s ]
